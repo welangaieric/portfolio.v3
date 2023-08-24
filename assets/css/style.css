@@ -2,6 +2,8 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  /* background-color: #050d18; */
+
 }
 
 a {
@@ -22,6 +24,76 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
+/* ----------------------------------------------------------------
+Dark Theme
+---------------------------------------------------------------- */
+.text{
+  color: #076797 !important;
+}
+.white{
+  color: rgb(138, 184, 248) !important;
+}
+section{
+  transition: .5s ease-in;
+}
+.background{
+  background-color: #050d18 !important;
+  color: #fff !important;
+  transition: .5s ease-in;
+}
+.theme{
+  color: white;
+  /* border: red solid; */
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 5px;
+}
+.theme-toggle{
+  width: 60px;
+  height: 30px;
+  border: #149ddd solid 1px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.radio{
+  width: 20px;
+  height: 20px;
+  background-color: #149ddd;
+  border-radius: 50%;
+  margin: 2px;
+  transition: .5s ease-in;
+
+}
+
+.anime{
+  animation: anime-me .5s linear;
+  transform: translateX(170%);
+
+}
+@keyframes anime-me {
+  0%{
+
+    
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(170%);
+
+  }
+
+  
+}
+.activeicon{
+  color: #149ddd;
+  transition: .5s ease-in;
+
+}
+
+
 
 /*--------------------------------------------------------------
 # Back to top button

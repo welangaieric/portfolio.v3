@@ -249,6 +249,37 @@
    * Initiate Pure Counter 
    */
   
-  
+ let theme = document.querySelector('.theme-toggle')
+ let themeSelector = document.querySelector('.radio')
+ let icon = document.querySelectorAll('.themeicon')
+ let sections = document.querySelectorAll('section')
+ let headtxt = document.querySelectorAll('h4')
+ let intext = document.querySelectorAll('h5')
+ let white = document.querySelectorAll('.skill')
+
+
+
+ theme.addEventListener('click',()=>{
+  themeSelector.classList.toggle('anime')
+  icon.forEach((e)=>{
+    e.classList.toggle('activeicon')
+  })
+  sections.forEach((e)=>{
+    e.classList.toggle('background')
+  })
+  headtxt.forEach((e)=>{
+    e.classList.toggle('text')
+  })
+  intext.forEach((e)=>{
+    e.classList.toggle('text')
+  })
+  white.forEach((e)=>{
+    e.classList.toggle('white')
+  })
+ })
 
 })()
+// .click(()=>{
+//   $('.radio').classList.toggle('anime')
+  
+//  })
